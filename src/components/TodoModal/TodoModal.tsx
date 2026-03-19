@@ -14,7 +14,7 @@ export const TodoModal: React.FC<Props> = ({
   setSelectedTodo,
 }) => {
   const [userInfo, setUserInfo] = useState<User | null>(null);
-  const [isUserLoading, setIsUserLoading] = useState(false);
+  const [isUserLoading, setIsUserLoading] = useState(true);
 
   useEffect(() => {
     const loadingModal = async () => {
